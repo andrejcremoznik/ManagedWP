@@ -122,6 +122,6 @@ echo "==> Creating developer admin account (login: dev / dev)"
 wp user create dev dev@dev.dev --user_pass=dev --role=administrator
 
 echo -e "==> All done.\n"
-echo "Set up the the web server and map the correct IP to $namespace.dev in your hosts file."
+echo "Set up the web server and map the correct IP to $namespace.dev in your hosts file."
 echo -e "Login at http://$namespace.dev/wp/wp-login.php (login: dev / dev)\n"
 echo "Happy hacking!"
