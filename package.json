@@ -1,0 +1,14 @@
+{
+  "name": "ManagedWP",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "shx rm -fr build",
+    "pack": "node config/scripts/deploy-pack.js",
+    "predeploy": "npm run clean && npm run pack",
+    "deploy": "node config/scripts/deploy-deploy.js",
+    "postdeploy": "npm run clean",
+    "deploy:revert": "node config/scripts/deploy-revert.js",
+    "deploy:init": "node config/scripts/deploy-init.js"
+  }
+}
