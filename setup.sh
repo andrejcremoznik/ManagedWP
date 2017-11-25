@@ -79,7 +79,7 @@ npm install --save-dev node-ssh shelljs shx
 echo -e "==> Symlinking default themes and plugins into web/app…\n"
 ln -s ${project_path}/web/wp/wp-content/themes/* ${project_path}/web/app/themes/
 ln -s ${project_path}/web/wp/wp-content/plugins/* ${project_path}/web/app/plugins/
-rm -f ${project_path}/web/app/plugins/
+rm -f ${project_path}/web/app/plugins/hello.php
 
 echo -e "\n==> Done.\n"
 
