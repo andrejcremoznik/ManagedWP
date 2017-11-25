@@ -22,7 +22,7 @@ sh.exec('composer install -o')
 // NOTE: If you don't need official themes and plugins, remove the following 3 lines
 sh.mv('web/wp/wp-content/themes/*', 'web/app/themes/')
 sh.mv('web/wp/wp-content/plugins/*', 'web/app/plugins/')
-sh.rm('web/app/plugins/hello.php')
+sh.rm('-f', 'web/app/plugins/hello.php')
 
 // Create tarball
 sh.exec('tar -zcf build.tar.gz *')

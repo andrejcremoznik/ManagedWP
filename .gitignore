@@ -14,9 +14,9 @@ sql-dump-*.sql
 
 # Application
 web/wp/
+web/app/languages/*
 web/app/plugins/*
 web/app/themes/*
-web/app/languages/*
 web/app/uploads/*
 
 

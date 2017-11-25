@@ -1,4 +1,4 @@
-Copyright (c) 2017 Andrej Cremoznik and contributors
+Copyright (c) 2017 Andrej Cremoznik
 https://github.com/andrejcremoznik/ManagedWP
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
