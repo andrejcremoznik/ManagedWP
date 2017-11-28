@@ -15,7 +15,7 @@ const config = {
 
 let initProcedure = [
   // Create directories
-  ['mkdir -p', path.join(config.deployPath, 'current')].join(' '),
+  ['mkdir -p', path.join(config.deployPath, 'current/web')].join(' '),
   ['mkdir -p', path.join(config.deployPath, 'previous')].join(' '),
   ['mkdir -p', path.join(config.deployPath, 'static/uploads')].join(' '),
   // Create an empty .env config file

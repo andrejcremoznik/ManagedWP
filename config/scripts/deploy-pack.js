@@ -10,9 +10,9 @@ sh.exec('git archive --format=tar --prefix=build/ HEAD | (tar xf -)')
 // - Don't use wildcards here, copy them 1 by 1
 // - Destination is always inside build directory
 // Examples:
-// sh.cp('-r', 'web/app/plugins/some-plugin', 'build/web/app/plugins/')
-// sh.cp('-r', 'web/app/plugins/some-theme', 'build/web/app/themes/')
-// sh.cp('-r', 'web/app/languages/*', 'build/web/app/languages/') // You may use wildcards for languages
+// sh.cp('-fr', 'web/app/plugins/some-plugin', 'build/web/app/plugins/')
+// sh.cp('-fr', 'web/app/themes/some-theme', 'build/web/app/themes/')
+// sh.cp('-fr', 'web/app/languages/*', 'build/web/app/languages/') // You may use wildcards for languages
 
 // Move into build dir, fetch composer dependencies
 sh.cd('build')

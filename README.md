@@ -30,7 +30,7 @@ This is a stripped-down version of [WordPressBP](https://github.com/andrejcremoz
 
 * LEMP stack (Linux, Nginx, MySQL, PHP 5.6+)
 * Git
-* NodeJS (`node`, `npm`)
+* NodeJS (`node`) and NPM (`npm`)
 * [Composer](https://getcomposer.org/)
 * [WP-CLI](http://wp-cli.org/)
 
@@ -92,7 +92,7 @@ server {
   # Rewrite URLs for uploaded files from dev to prod
   # - If you've synced the DB from a production site, you don't need to
   #   download the uploads folder for images to work.
-  #location /app/uploads {
+  #location /app/uploads/ {
   #  rewrite ^ http://production.site/$request_uri permanent;
   #}
 

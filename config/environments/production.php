@@ -9,6 +9,7 @@ define('DISABLE_WP_CRON', true);
 
 // Enable for use with a caching plugin
 define('WP_CACHE', false);
+define('WP_CACHE_KEY_SALT', 'ManagedWP');
 
 // Disable WP file editor and update checking
 define('DISALLOW_FILE_MODS', true);
