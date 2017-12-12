@@ -17,7 +17,7 @@
 ssh_connection="user@host -p 54321"
 
 # TODO: Set path to the WordPress installation directory on the server
-remote_wordpress="/srv/http/WordPressBP/current/web/wp"
+remote_wordpress="/srv/http/ManagedWP/current/web/wp"
 
 function findWPCLI {
   command -v wp > /dev/null 2>&1 || { echo >&2 "==> WP-CLI needs to be available as 'wp' command in your PATH $1"; exit 1; }
