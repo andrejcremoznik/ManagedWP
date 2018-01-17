@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #
 # This script will:
@@ -39,8 +39,8 @@ ssh -C $ssh_connection "wp --path=$remote_wordpress db export -" | wp db import 
 echo -e "==> Cleaning up…"
 wp comment delete $(wp comment list --status=spam --format=ids) --force
 wp db query "DELETE FROM wpdb_posts WHERE post_type = 'revision'"
-wp cache flush
 wp transient delete-all
+wp cache flush
 
 # TODO: Do a search-replace on the entire database for site URL
 #echo -e "==> Search/replace hostname…"
